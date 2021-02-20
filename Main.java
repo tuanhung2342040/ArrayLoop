@@ -8,7 +8,6 @@ public class Main {
         int count = 0;
         int sum = 0;
         double average;
-        int temp;
 
         Random random = new Random();
         int [] arr = new int[20];
