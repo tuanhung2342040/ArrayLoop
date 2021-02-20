@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -8,6 +9,7 @@ public class Main {
         int count = 0;
         int sum = 0;
         double average;
+
 
         Random random = new Random();
         int [] arr = new int[20];
@@ -31,15 +33,15 @@ public class Main {
         System.out.println("The average of these values is " + average);
         System.out.println("----------------------------------------------");
 
-         System.out.println("Array after swap number[0] and number[1]:");
-        
+        System.out.println("Array after swap number[0] and number[1]:");
+
         int temp = numbers[0];
         numbers[0] = numbers[1];
         numbers[1] = temp;
         System.out.println(Arrays.toString(numbers));
-        
+
         System.out.println("----------------------------------");
-        for(int i = numbers.length; i >= 0;i--){
+        for(int i = numbers.length-1; i >= 0;i--){
             System.out.println(" " + i +"\t\t" + numbers[i]);
         }
 
