@@ -32,20 +32,15 @@ public class Main {
         System.out.println("The average of these values is " + average);
         System.out.println("----------------------------------------------");
 
-        System.out.println("Index\t" +"Value");
-        int [] array = new int[10];
-        for(int i=0;i<array.length;i++){
-            temp = numbers[0];
-            numbers[0]=numbers[1];
-            numbers[1]=temp;
-            System.out.println(" " + i +"\t\t" + numbers[i]);
-
-        }
+         System.out.println("Array after swap number[0] and number[1]:");
+        
+        int temp = numbers[0];
+        numbers[0] = numbers[1];
+        numbers[1] = temp;
+        System.out.println(Arrays.toString(numbers));
+        
         System.out.println("----------------------------------");
-
-
-        int [] number = new int[10];
-        for(int i = 9; i >= 0;i--){
+        for(int i = numbers.length; i >= 0;i--){
             System.out.println(" " + i +"\t\t" + numbers[i]);
         }
 
