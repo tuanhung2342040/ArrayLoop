@@ -41,6 +41,7 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
 
         System.out.println("----------------------------------");
+        System.out.println("Index\t" +"Value");
         for(int i = numbers.length-1; i >= 0;i--){
             System.out.println(" " + i +"\t\t" + numbers[i]);
         }
